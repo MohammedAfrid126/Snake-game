@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body a{
+    position: absolute;
+    bottom: 10px ;
+    right: 50px;
+}
+
+body a img{
+    height: 50px;
+    width: 50px;
+}
+
+.body{
+    position: absolute;
+    background: url('../img/BG3.webp') right no-repeat ;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+
+}
+
+#board{
+    /* background: transparent; */
+    backdrop-filter: blur(15px);
+    margin-left: 5%;
+    height: 90vmin;
+    width: 90vmin;
+    border: 4px solid green;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+
+#hiScoreBox{
+    position: absolute;
+    top: 8px;
+    right: 5%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 50px;
+    right: 5%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.head{
+    background: url('../img/head1.png');
+    /* transform: rotate(45deg); */
+    scale: 1.5;
+    background-size: cover;
+    border-radius: 80px;
+}
+
+.snakeBody{
+    /* background: url('../img/body.png') ; */
+    background:linear-gradient(#23b14d,#23b14d,rgb(232, 190, 127));
+    /* background-size: cover; */
+    border-radius: 10px;
+    rotate: (180);
+}
+
+.food{
+    background: url('../img/apple.png');
+    scale: 1.5;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.img-animation-footer {
+    display: block;
+    animation: 1s linear 0s infinite alternate move-eye;
+    height: 8rem;
+    overflow: hidden;
+}
+
+@keyframes move-eye {
+    from {
+        margin-left: 5%;
+    }
+
+    to {
+        margin-left: 60%;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+
+    .img-animation-footer {
+        height: 6rem;
+    }
+
+    #scoreBox{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #hiScoreBox{
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .img-animation-footer {
+        height: 4rem;
+    }
+    
+    #scoreBox{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #hiScoreBox{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .img-animation-footer {
+        height: 2rem;
+    }
+
+    #scoreBox{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #hiScoreBox{
+        font-size: 15px;
+    }
+}
