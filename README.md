@@ -13,6 +13,5 @@ This is a snake game built with Pure HTML, CSS and JS. This website is Responssi
 
 https://mohammedafrid126.github.io/Snake-game/
 
-
 ## Tech Stack
 HTML, CSS and JS.
